@@ -3,13 +3,19 @@ import { Header } from './Components/Header/Header';
 import { Content } from './Components/Content';
 import {Footer} from './Components/Footer/Footer';
 
+import { storage } from './Redusers';
+import { Provider } from 'react-redux';
+
 function App() {
+
   return (
-    <div className="App">
+    <Provider store={storage}>
+      <div className="App">
         <Header />
         <Content />
         <Footer />
-    </div>
+      </div>
+    </Provider>
   );
 }
 
