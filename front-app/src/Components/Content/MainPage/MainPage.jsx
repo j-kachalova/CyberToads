@@ -14,7 +14,7 @@ const MainPage = () => {
             duration: 500,
             smooth: true
         }
-        switch(curr){
+        switch(curr){ //links where to scroll must be in div elements as name, use scroller to scroll
             case 1: 
                 scroller.scrollTo('MainBanner', animOps);
                 break;
@@ -29,7 +29,7 @@ const MainPage = () => {
 
     return (
         <div className='MainPage'>
-            <div className='Header_container' name='MainBanner'></div>
+            <div className='Header_container' name='MainBanner' />
             <MainBanner />
             <div className='testbox' name='section2'/>
         </div>
