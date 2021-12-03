@@ -10,13 +10,6 @@
     flex-shrink: unset;
 }
 
-.Holder {
-    height: 100px;
-    width: 100%;
-    content: '';
-    background-color: #ddd;
-}
-
 .MainBanner_wrapper{
     width: 100%;
     height: auto;
@@ -53,7 +46,7 @@
 .MainBanner_description{
     position: absolute;
     width: 40%;
-    height: 2em;
+    height: 3em;
     left: 13%;
     top: 44%;
 
@@ -62,10 +55,8 @@
     font-weight: normal;
     font-size: 2.2vh;
     line-height: 99.5%;
-    /* or 18px */
     display: flex;
-    align-items: center;
-    text-align: left;
+    text-align: center;
 
     color: #464646;
 }
