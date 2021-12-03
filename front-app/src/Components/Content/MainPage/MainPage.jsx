@@ -15,10 +15,10 @@ const MainPage = () => {
             smooth: true
         }
         switch(curr){ //links where to scroll must be in div elements as name, use scroller to scroll
-            case 1: 
+            case 0: 
                 scroller.scrollTo('MainBanner', animOps);
                 break;
-            case 2:
+            case 1:
                 scroller.scrollTo('section2', animOps);
                 break;
             default:

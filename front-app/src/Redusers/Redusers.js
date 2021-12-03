@@ -9,7 +9,7 @@ const reducer = (state, action) => {
         case reduceActions.scrollTo: {
             const newState = {
                 ...state,
-                currentPagePos: action.value || 1
+                currentPagePos: action.value
             };
             return newState;
         }
