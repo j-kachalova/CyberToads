@@ -25,14 +25,6 @@ RUN apt-get install -y --fix-missing \
     zip \
     && apt-get clean && rm -rf /tmp/* /var/tmp/*
 
-# Add bash in image
-RUN apk add --no-cache bash
-
-RUN apk add fontconfig ttf-dejavu
-
-RUN addgroup -S spring && adduser --system spring -G spring
-USER spring:spring
-
 #Since SprinBoot 2.5.0 assemble/build tasks generate 2 jar files: executable and plain.
 #To avoid probles with adding, generate only executable JAR by task 'bootJar'
 ARG JAR_FILE=build/libs/*.jar
