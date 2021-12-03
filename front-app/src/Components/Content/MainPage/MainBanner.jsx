@@ -4,7 +4,7 @@ import MainBannerSvg from './MainBanner.svg';
 
 const MainBanner = () => {
     return (
-        <div className = 'MainBanner_wrapper'>
+        <div className = 'MainBanner_wrapper' >
             <img src={MainBannerSvg} alt='banner bg' className='MainBanner_image'/>
             <span className='MainBanner_title'>
                 Найдите и отследите<br/>

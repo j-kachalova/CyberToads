@@ -33,6 +33,7 @@
     flex-direction: column;
     flex-shrink: unset;
     flex-grow: unset;
+    cursor: pointer;
 }
 
 .Header_link_selected {

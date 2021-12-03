@@ -1,10 +1,10 @@
 import './Header.css';
 
-const HeaderLink = ({ children }) => {
+const HeaderLink = ({ elemRef, onClick, children }) => {
 
     // const [isSelected, setSelected]
     return (
-        <div className='Header_link Header_link_selected'>
+        <div className='Header_link' ref = {elemRef} onClick = {onClick}>
             {children}
         </div>
     )
