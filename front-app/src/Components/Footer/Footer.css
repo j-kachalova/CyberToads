@@ -1,0 +1,57 @@
+.Footer {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    height: 60vh;
+    background-color: blue;
+    text-align: left;
+}
+
+.Footer_part{
+    height: 30vh;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Column{
+    display: flex;
+    flex-direction: column;
+}
+.Footer_sub{
+    font-size: 2vh;
+    width: 70%;
+    font-weight: 300;
+}
+.Footer_sub_heading{
+    font-size: 3vh;
+}
+.Footer_part_left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: green;
+
+}
+.Footer_part_right{
+    width: 41%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: green;
+
+}
+.Footer_column{
+    width: 33%;
+    background-color: blueviolet;
+    padding-top: 5%;
+    font-size: 2.2vh;
+}
+.Footer_column_txt{
+    font-weight: 300;
+}
+.FC2{
+    padding-left: 2%;
+    box-sizing: border-box;
+}
