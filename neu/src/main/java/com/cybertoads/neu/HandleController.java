@@ -1,9 +1,9 @@
 package com.cybertoads.neu;
 
-import org.springframework.util.ResourceUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -21,19 +21,20 @@ import java.util.UUID;
 
 @RestController
 public class HandleController {
+    private static final Logger log = LoggerFactory.getLogger(HandleController.class);
+    private static final String SCRIPT_PATH = "/utility/recognition.py";
 
     @PostMapping("/proceed")
-    @ResponseBody
-    public Collection<HandledPerson> uploadMultipleFiles(@RequestBody MultipartFile[] files) {
+    public Collection<HandledPerson> uploadMultipleFiles(@RequestParam("files") MultipartFile[] files) {
+        if (files.length < 2) {
+            return new LinkedList<>(); //TODO:
+        }
+
+        String currentDir = System.getProperty("user.dir");
+        String directoryName = UUID.randomUUID().toString();
+        String directoryPath = currentDir + "/" + directoryName;
+
         try {
-            String currentDir = System.getProperty("user.dir");
-            String directoryName = UUID.randomUUID().toString();
-            String directoryPath = currentDir + "/" + directoryName;
-
-            if (files.length < 2) {
-                return new LinkedList<>(); //TODO:
-            }
-
             MultipartFile known = files[0];
             String knownDirectoryPath = directoryPath + "/known";
             Files.createDirectories(Path.of(knownDirectoryPath));
@@ -49,7 +50,9 @@ public class HandleController {
 
             return readFile(directoryPath + "/result.txt");
         } catch (Exception ex) {
+            clean(directoryPath);
             //TODO: add details for potential debug
+            log.warn(ex.getMessage());
             return new LinkedList<>();
         }
     }
@@ -65,13 +68,10 @@ public class HandleController {
     }
 
     private void executeScript(String arg1, String arg2) throws Exception {
-        File script = ResourceUtils.getFile("recognition.py");
-
         ProcessBuilder processBuilder = new ProcessBuilder().command(String.format("python3 %s \"%s\" \"%s\"",
-                script.getAbsolutePath(), arg1, arg2));
-
+                SCRIPT_PATH, arg1, arg2));
         Process process = processBuilder.start();
-        process.destroy();
+        process.waitFor();
     }
 
     private Collection<HandledPerson> readFile(String filePath) throws Exception {
@@ -85,5 +85,23 @@ public class HandleController {
             persons.add(new HandledPerson(filename, result));
         }
         return persons;
+    }
+
+    private void clean(String directory) {
+        deleteFolder(new File(directory));
+    }
+
+    private void deleteFolder(File folder) {
+        File[] files = folder.listFiles();
+        if (files != null) {
+            for (File file : files) {
+                if (file.isFile()) {
+                    file.delete();
+                } else {
+                    deleteFolder(file);
+                }
+            }
+        }
+        folder.delete();
     }
 }

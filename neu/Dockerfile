@@ -25,6 +25,7 @@ RUN apt-get install -y --fix-missing \
     zip \
     && apt-get clean && rm -rf /tmp/* /var/tmp/*
 
+COPY "./src/man/resources/recognition.py" "/utility"
 #Since SprinBoot 2.5.0 assemble/build tasks generate 2 jar files: executable and plain.
 #To avoid probles with adding, generate only executable JAR by task 'bootJar'
 ARG JAR_FILE=build/libs/*.jar
