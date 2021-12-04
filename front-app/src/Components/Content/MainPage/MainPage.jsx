@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { animateScroll as scroll, scroller } from "react-scroll";
 import {Advantages} from "../advantages/Advantages";
+import {UsageScenarios} from "../usage_scenarios/UsageScenarios";
 import {Security} from "../Security/Security";
 
 const MainPage = () => {
@@ -34,6 +35,7 @@ const MainPage = () => {
             <div className='Header_container' name='MainBanner' />
             <MainBanner />
             <Advantages />
+            <UsageScenarios/>
             <Security />
             <div className='testbox' name='section2'/>
         </div>
