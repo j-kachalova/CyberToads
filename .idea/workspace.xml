@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddb499f7-f7e5-4c25-b947-73968545fbcb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/front-app/src/Components/Content/Security/Security.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-app/src/Components/Content/advantages/Advantages.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-app/src/Components/Content/advantages/Advantages.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-app/src/Components/Content/advantages/Advantages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-app/src/Components/Content/advantages/Advantages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-app/src/Components/Content/MainPage/MainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-app/src/Components/Content/MainPage/MainPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +44,22 @@
       <option name="presentableId" value="Default" />
       <updated>1638545988650</updated>
       <workItem from="1638546028953" duration="15757000" />
-      <workItem from="1638569885961" duration="6319000" />
+      <workItem from="1638569885961" duration="11079000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
