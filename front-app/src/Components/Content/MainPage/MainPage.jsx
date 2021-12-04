@@ -4,6 +4,7 @@ import '../../Header/Header.css';
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { animateScroll as scroll, scroller } from "react-scroll";
+import {Advantages} from "../advantages/Advantages";
 
 const MainPage = () => {
 
@@ -31,6 +32,7 @@ const MainPage = () => {
         <div className='MainPage'>
             <div className='Header_container' name='MainBanner' />
             <MainBanner />
+            <Advantages />
             <div className='testbox' name='section2'/>
         </div>
     )
