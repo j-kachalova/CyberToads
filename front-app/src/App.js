@@ -7,14 +7,13 @@ import { storage } from './Redusers';
 import { Provider } from 'react-redux';
 
 function App() {
-
   return (
     <Provider store={storage}>
-      <div className="App">
-        <Header />
-        <Content />
-        <Footer />
-      </div>
+        <div className="App">
+            <Header/>
+            <Content/>
+            <Footer/>
+        </div>
     </Provider>
   );
 }
