@@ -1,7 +1,6 @@
 import security from "./assets/Security.svg"
 import './Security.css';
 
-
 const Security = () => {
     return (
     <div className={"Security"}>

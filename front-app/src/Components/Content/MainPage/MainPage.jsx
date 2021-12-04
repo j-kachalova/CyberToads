@@ -28,8 +28,11 @@ const MainPage = () => {
             case 2:
                 scroller.scrollTo('usage_scenarios', animOps);
                 break;
-            case 4:
+            case 3:
                 scroller.scrollTo('Security', animOps);
+                break;
+            case 4:
+                scroller.scrollTo('MainBanner', animOps);
                 break;
             default:
                 scroll.scrollToTop(animOps);
@@ -44,7 +47,6 @@ const MainPage = () => {
             <Advantages />
             <UsageScenarios/>
             <Security />
-            <div className='testbox' name='section2'/>
         </div>
     )
 }

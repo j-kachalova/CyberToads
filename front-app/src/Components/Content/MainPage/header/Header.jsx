@@ -36,7 +36,8 @@ const Header = () => {
             </HeaderLink>
             <HeaderLink elemRef = {ref1} onClick={() => ScrollToElem(1)}> Преимущества </HeaderLink>
             <HeaderLink elemRef = {ref2} onClick={() => ScrollToElem(2)}> Сценарии использования </HeaderLink>
-            <HeaderLink elemRef = {ref4} onClick={() => ScrollToElem(3)}> Почему это безопасно? </HeaderLink>
+            <HeaderLink elemRef = {ref3} onClick={() => ScrollToElem(3)}> Наши партнеры </HeaderLink>
+            <HeaderLink elemRef = {ref4} onClick={() => ScrollToElem(4)}> Почему это безопасно? </HeaderLink>
             
             <div className='Header_link'>
                 <button className='Header_Login_button'> Войти в аккаунт </button>

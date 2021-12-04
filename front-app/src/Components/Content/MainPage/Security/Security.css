@@ -15,7 +15,7 @@
     width: 40%;
     height: 2em;
     left: 13%;
-    top: 322%;
+    top: 252%;
 
     font-family: Rubik Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
@@ -29,12 +29,12 @@
     color: #272727;
 }
 
-.Security_description{
+.Security_description {
     position: absolute;
     width: 40%;
     height: 3em;
     left: 13%;
-    top: 334%;
+    top: 264%;
 
     font-family: Rubik Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
@@ -57,7 +57,7 @@
     width: auto;
     height: 3em;
     left: 13%;
-    top: 345%;
+    top: 275%;
 
     background: #7700FF;
     border-radius: 10px;
