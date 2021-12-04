@@ -12,27 +12,27 @@ const Advantages = () => {
             <h3 className={"title"}>Наши преимущества</h3>
             <div className={"advantages_row"}>
                 <div className={"advantages_cell"}>
-                    <img src={fast_speed} alt={""}/>
+                    <img className={"adv_photo"} src={fast_speed} alt={""}/>
                     <span>Высокая скорость поиска информации</span>
                 </div>
                 <div className={"advantages_cell"}>
-                    <img src={convenient_interface} alt={""}/>
+                    <img className={"adv_photo"} src={convenient_interface} alt={""}/>
                     <span>Удобный интерфейс</span>
                 </div>
                 <div className={"advantages_cell"}>
-                    <img src={search} alt={""}/>
+                    <img className={"adv_photo"} src={search} alt={""}/>
                     <span>Поиск по множеству критериев</span>
                 </div>
                 <div className={"advantages_cell"}>
-                    <img src={data_safety} alt={""}/>
+                    <img className={"adv_photo"} src={data_safety} alt={""}/>
                     <span>Гарантия безопасности ваших данных</span>
                 </div>
                 <div className={"advantages_cell"}>
-                    <img src={cross_platform} alt={""}/>
+                    <img className={"adv_photo"} src={cross_platform} alt={""}/>
                     <span>Кросплатформенность сервиса</span>
                 </div>
                 <div className={"advantages_cell"}>
-                    <img src={service_safety} alt={""}/>
+                    <img className={"adv_photo"} src={service_safety} alt={""}/>
                     <span>Сервис защищен от противоправных действий</span>
                 </div>
             </div>
