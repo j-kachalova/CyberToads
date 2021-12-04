@@ -1,0 +1,33 @@
+.usage_scenarios {
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 30px;
+    font-family: Rubik Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.usage_scenarios_rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.usage_scenarios_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.usage_scenario_cell {
+    margin: 40px;
+}
+
+.first_row .usage_scenario_cell {
+    margin: 0 40px 40px 40px;
+}
+
+.green {
+    background-color: green;
+}

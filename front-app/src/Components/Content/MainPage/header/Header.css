@@ -1,0 +1,63 @@
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+
+.Header_container{
+    width: 80%;
+    height: 10vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.Logo{
+    height: 3vh;
+    width: auto;
+}
+
+.Header_link {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-shrink: unset;
+    flex-grow: unset;
+    cursor: pointer;
+}
+
+.Header_link_selected {
+    border-bottom: 3px solid #7700FF;;
+}
+
+.Header_Login_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5em 3em;
+
+    width: auto;
+    height: 3em;
+
+    background: #7700FF;
+    border-radius: 1vh;
+
+    font-family: Rubik Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vh;
+    line-height: 1.1em;
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
