@@ -2,14 +2,14 @@
     padding-left: 12.5%;
     padding-right: 12.5%;
     height: 60vh;
-    background-color: blue;
+   /* background-color: blue;*/
     text-align: left;
 }
 
 .Footer_part{
     height: 30vh;
     width: 100%;
-    background-color: red;
+   /* background-color: red;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,7 +31,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    background-color: green;
+   /* background-color: green;*/
 
 }
 .Footer_part_right{
@@ -39,12 +39,12 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    background-color: green;
+   /* background-color: green;*/
 
 }
 .Footer_column{
     width: 33%;
-    background-color: blueviolet;
+   /* background-color: blueviolet;*/
     padding-top: 5%;
     font-size: 2.2vh;
 }
@@ -54,4 +54,31 @@
 .FC2{
     padding-left: 2%;
     box-sizing: border-box;
+}
+.Button_sub{
+    width: 15%;
+    height:6vh;
+    border-radius: 10px;
+    border-style: none;
+    background: #7700FF;
+    color: white;
+}
+.Input_sub{
+    border-style: solid;
+    border-bottom-color: #C34545;
+    border-top-color: white;
+    border-right-color: white;
+    border-left-color: white;
+    width: 80%;
+}
+.Footer_form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.Footer_soc_network{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
 }

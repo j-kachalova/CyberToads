@@ -1,4 +1,8 @@
 import './Footer.css';
+import inst from './Inst.svg';
+import twitter from './Twitter.svg';
+import facebook from './Facebook.svg';
+
 const Footer = () => {
     return (
         <div className="Footer Footer_container">
@@ -11,9 +15,20 @@ const Footer = () => {
                         Подпишитесь на эксклюзивный доступ к свежим новостям о наших передовых разработках.
                     </p>
                 </div>
-                <div className="Footer_part_right Column">
 
-                </div>
+                <form className="Footer_part_right Column">
+                    <label>Узнавайте о новостях:</label>
+                    <div className="Footer_form">
+                        <input type="email" placeholder="Введите E-Mail" className="Input_sub"/>
+                        <button className="Button_sub">Ввод</button>
+                    </div>
+                    <div className="Footer_soc_network">
+                        <img src={inst} alt='inst' className='Inst'/>
+                        <img src={twitter} alt='twitter' className='Twitter'/>
+                        <img src={facebook} alt='facebook' className='Facebook'/>
+                    </div>
+                </form>
+
             </div>
             <div className="Footer_part">
                 <div className="Footer_part_left">
