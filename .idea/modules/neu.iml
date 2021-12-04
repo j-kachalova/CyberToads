@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <setting name="provider-name" value="Jmix EclipseLink" />
+        <datasource-mapping />
+        <naming-strategy-map />
+      </configuration>
+    </facet>
+  </component>
+  <component name="JmixProjectModulesStateV2">
+    <option name="hasState" value="true" />
+    <option name="moduleState">
+      <JmixModuleStateV2>
+        <option name="artifactGroup" value="com.cybertoads.neu" />
+        <option name="artifactName" value="neu" />
+        <option name="artifactVersion" value="0.0.1" />
+        <option name="bomVersion" value="1.1.1" />
+        <option name="buildFilePath" value="$MODULE_DIR$/../../neu/build.gradle" />
+        <option name="buildScriptDependencies">
+          <Dependency configuration="classpath" group="io.jmix" name="io.jmix.gradle.plugin" version="1.1.3" />
+          <Dependency configuration="classpath" group="io.freefair.lombok" name="io.freefair.lombok.gradle.plugin" version="6.3.0" />
+        </option>
+        <option name="buildSystemName" value="Gradle" />
+        <option name="dependencies">
+          <Dependency configuration="implementation" group="org.springframework.boot" name="spring-boot-starter-web" />
+          <Dependency configuration="widgets" group="javax.validation" name="validation-api" version="1.0.0.GA" />
+          <Dependency configuration="implementation platform" group="io.jmix.bom" name="jmix-bom" version="1.1.1" />
+        </option>
+        <option name="jarFile" value="$MODULE_DIR$/../../neu/build/libs/neu-0.0.1-plain.jar" />
+        <option name="jmixVersion" value="1.1.1" />
+        <option name="mavenLocalURI" value="file:$MAVEN_REPOSITORY$/" />
+        <option name="moduleName" value="neu" />
+        <option name="rootProjectName" value="neu" />
+        <option name="stateRepositories">
+          <Repository url="https://repo.maven.apache.org/maven2/" />
+          <Repository url="https://global.repo.jmix.io/repository/public" />
+        </option>
+      </JmixModuleStateV2>
+    </option>
+  </component>
+</module>

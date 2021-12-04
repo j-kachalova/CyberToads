@@ -1,0 +1,15 @@
+recognition.py execution hints:
+
+the python script is expecting two arguments.
+first one - path of folder where pictures are placed. 
+	In the folder must be two subfolders - "known" and "unknown". 
+	The known one should contains only one image (whom you want to detect).
+	The unknown one may contains any number of images.
+second one - path of folder where script must place the result.
+
+
+The result file will be at SECOND_ARG/result.txt in format:
+two_people.jpg [True]
+unknown_person.jpg [False]
+
+where first part is filename and the second one is result - is desired person detected or not
