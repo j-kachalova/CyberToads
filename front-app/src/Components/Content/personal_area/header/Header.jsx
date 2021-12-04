@@ -1,11 +1,11 @@
 import './Header.css';
 
-import logo from './assets/Logo.svg';
+import logo from './Logo.svg';
 import { HeaderLink } from './HeaderLink';
 import { useCallback, useEffect, useMemo, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import { reduceActions } from '../../Redusers';
+import { reduceActions } from '../../../../Redusers';
 
 const Header = () => {
 
@@ -34,10 +34,10 @@ const Header = () => {
             <HeaderLink elemRef = {refLogo} onClick={() => ScrollToElem(0)}>
                 <img src={logo} alt='logo' className='Logo'/>
             </HeaderLink>
-            <HeaderLink elemRef = {ref1} onClick={() => ScrollToElem(1)}> Преимущества </HeaderLink>
-            <HeaderLink elemRef = {ref2} onClick={() => ScrollToElem(2)}> Сценарии использования </HeaderLink>
-            <HeaderLink elemRef = {ref3} onClick={() => ScrollToElem(3)}> Наши партнеры </HeaderLink>
-            <HeaderLink elemRef = {ref4} onClick={() => ScrollToElem(4)}> Почему это безопасно? </HeaderLink>
+            <HeaderLink elemRef = {ref1} onClick={() => ScrollToElem(1)}> Профиль </HeaderLink>
+            <HeaderLink elemRef = {ref2} onClick={() => ScrollToElem(2)}> Поиск информации </HeaderLink>
+            <HeaderLink elemRef = {ref3} onClick={() => ScrollToElem(3)}> Подача заявления </HeaderLink>
+            <HeaderLink elemRef = {ref4} onClick={() => ScrollToElem(4)}> Поддержка </HeaderLink>
             
             <div className='Header_link'>
                 <button className='Header_Login_button'> Войти в аккаунт </button>

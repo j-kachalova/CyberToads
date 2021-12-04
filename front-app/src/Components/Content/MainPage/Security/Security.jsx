@@ -1,4 +1,4 @@
-import security from "./Security.svg"
+import security from "./assets/Security.svg"
 import './Security.css';
 
 

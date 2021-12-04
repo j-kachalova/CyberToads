@@ -1,10 +1,10 @@
 import './Content.css';
-import {PersonalArea} from "./personal_area/PersonalArea";
+import {MainPage} from "./MainPage";
 
 const Content = () => {
     return (
         <div>
-            <PersonalArea />
+            <MainPage/>
         </div>
     );
 }

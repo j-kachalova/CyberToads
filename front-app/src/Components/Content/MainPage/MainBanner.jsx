@@ -1,5 +1,5 @@
 import './MainPage.css';
-import MainBannerSvg from './MainBanner.svg';
+import MainBannerSvg from './assets/MainBanner.svg';
 
 
 const MainBanner = () => {
