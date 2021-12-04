@@ -1,0 +1,73 @@
+.Security{
+
+}
+
+.Security_image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.Security_title {
+    position: absolute;
+    width: 40%;
+    height: 2em;
+    left: 13%;
+    top: 252%;
+
+    font-family: Rubik Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4vh;
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    color: #272727;
+}
+
+.Security_description {
+    position: absolute;
+    width: 40%;
+    height: 3em;
+    left: 13%;
+    top: 264%;
+
+    font-family: Rubik Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.2vh;
+    line-height: 99.5%;
+    display: flex;
+    text-align: left;
+
+    color: #464646;
+}
+
+.Security_button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0.8em 2em;
+
+    position: absolute;
+    width: auto;
+    height: 3em;
+    left: 13%;
+    top: 275%;
+
+    background: #7700FF;
+    border-radius: 10px;
+
+    font-family: Rubik Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vh;
+    line-height: 1.1em;
+
+    color: #FFFFFF;
+    cursor: pointer;
+}
