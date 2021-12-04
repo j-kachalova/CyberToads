@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2021-12-03T12:45:10.716Z" agent="5.0 (X11)" etag="MaITDwruV4bqi6bqMTnB" version="15.8.2" type="github">
+  <diagram id="4--m4Km5jCpsTV1IGMaW" name="Page-1">
+    <mxGraphModel dx="2440" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gAfc1uIG-7i2aHRbjNRq-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gAfc1uIG-7i2aHRbjNRq-1" target="gAfc1uIG-7i2aHRbjNRq-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gAfc1uIG-7i2aHRbjNRq-1" value="&lt;div&gt;backend&lt;/div&gt;(Java)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gAfc1uIG-7i2aHRbjNRq-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gAfc1uIG-7i2aHRbjNRq-2" target="gAfc1uIG-7i2aHRbjNRq-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gAfc1uIG-7i2aHRbjNRq-2" value="&lt;div&gt;frontend&lt;/div&gt;&lt;div&gt;(React?)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gAfc1uIG-7i2aHRbjNRq-3" value="db&lt;br&gt;(postgres)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gAfc1uIG-7i2aHRbjNRq-4" value="&lt;div&gt;solr&lt;/div&gt;&lt;div&gt;&amp;nbsp;(search feature)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gAfc1uIG-7i2aHRbjNRq-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gAfc1uIG-7i2aHRbjNRq-5" target="gAfc1uIG-7i2aHRbjNRq-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gAfc1uIG-7i2aHRbjNRq-5" value="TVS&lt;br&gt;(authentication feature)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gAfc1uIG-7i2aHRbjNRq-6" value="db&lt;br&gt;(postgres)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
